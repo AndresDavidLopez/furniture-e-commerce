@@ -1,0 +1,36 @@
+.Navbar{
+	width: max-content;
+	height: min-content;
+	font-family: var(--fontPoppinsMed);
+	font-size: 1.25rem;
+	margin: 3.1875rem 0 0 5.4375rem;
+}
+
+.Navbar__ul{
+	display: flex;
+	flex-direction: row;
+	gap: 2.125rem;
+	margin: 0;
+	padding: 0;
+}
+
+.Navbar__li{
+	list-style: none;
+	width: max-content;
+}
+
+.Navbar__li a{
+	text-decoration: none;
+	color: var(--blackColor);
+	transition: all 0.2s ease-in-out;
+	display: flex;
+}
+
+.Navbar__li a:hover{
+	transform: scale(1.05);
+	color: var(--principalColor);
+}
+
+.Navbar__li a:active{
+	transform: scale(0.95);
+}

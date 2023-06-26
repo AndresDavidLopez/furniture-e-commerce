@@ -1,0 +1,82 @@
+.UserData{
+	/* background-color: red; */
+	height: 3.375rem;
+	margin: 2.4375rem 2.4375rem 0 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-family: var(--fontPoppinsReg);
+	font-size: 1.125rem;
+}
+
+
+.UserData__options{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 4rem;
+	gap: .6875rem;
+	padding: .3125rem .875rem;
+	border-radius: .9375rem;
+	transition: all 0.2s ease-in-out;
+	stroke: var(--principalColor);
+}
+
+.UserData__options:hover{
+	cursor: pointer;
+	background-color: var(--principalColorHover);
+}
+
+.UserData__greeting{
+	display: flex;
+	flex-direction: row;
+	gap: .3125rem;
+}
+
+.UserData__name{
+	font-family: var(--fontPoppinsMed);
+	color: var(--blackColor);
+}
+
+.UserData__img{
+	height: 100%;
+	border-radius: 50%;
+	border: 3px solid var(--principalColor);
+}
+
+.UserData__favorites, .UserData__cart{
+	stroke: var(--redColor);
+	padding: .375rem;
+	width: 2.25rem;
+	background-color: var(--redColorOpacity);
+	outline: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+}
+
+.UserData__favorites::before, .UserData__cart::before{
+	content: attr(data-favoriteCount);
+	position: absolute;
+	top: -9px;
+	right: -8px;
+	padding: .125rem .375rem;
+	background-color: var(--redColor);
+	color: var(--whiteColor);
+	border-radius: 15px;
+}
+
+.UserData__cart{
+	stroke: var(--principalColor);
+	background-color: var(--principalColorOpacity);
+	margin: 0 .9375rem 0 1.8125rem;
+}
+
+.UserData__cart::before{
+	content: attr(data-cartCount);
+	background-color: var(--principalColor);
+}

@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Rajdhani-Bold';
+  src: local('Rajdhani-Bold'), url(./fonts/Rajdhani-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Rajdhani-SemiBold';
+  src: local('Rajdhani-SemiBold'), url(./fonts/Rajdhani-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik-VariableFont_wght'), url(./fonts/Rubik-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-reg';
+  src: local('Poppins-reg'), url(./fonts/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-med';
+  src: local('Poppins-med'), url(./fonts/Poppins-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-semB';
+  src: local('Poppins-semB'), url(./fonts/Poppins-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-bold';
+  src: local('Poppins-bold'), url(./fonts/Poppins-Bold.ttf) format('truetype');
+}
+
+:root{
+  --principalColor: #076BB2;
+	--principalColorHover: #076bb21a;
+  --blackColor: #000000;
+	--redColor: #E33434;
+	--redColorOpacity: #e3353526;
+	--principalColorOpacity: #076bb226;
+	--greenColor: #1BBC2B;
+	--whiteColor: #FFFFFF;
+	--grayColor: #4B4B4B;
+	--fontPoppinsReg: 'Poppins-reg', Arial, sans-serif;
+	--fontPoppinsMed: 'Poppins-med', Arial, sans-serif;
+	--fontPoppinsSemB: 'Poppins-semB', Arial, sans-serif;
+	--fontPoppinsBold: 'Poppins-bold', Arial, sans-serif;
+  --fontBrand: 'Rubik', Arial, sans-serif;
+  /* --emphasisColor: #193141;
+  --iconsBaseColor: #9BA9B6; */
+  /* --iconsEmphasisColor: #ffffff; */
+  /* --fontBrandSemiBold: 'Rajdhani-SemiBold', 'Franklin Gothic Medium', sans-serif;
+  --fontBrandBold: 'Rajdhani-Bold', 'Franklin Gothic Medium', sans-serif; */
+}
+
+*{
+  box-sizing: border-box;
+  scrollbar-width: thin; /* for firefox */
+}
+
+:focus{
+  outline-color: #FFFFFF;
+}
+
+:active{
+  outline: none;
+}
+
+html{
+	font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #D4F0FF 0%, #FFF2F2 100%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
