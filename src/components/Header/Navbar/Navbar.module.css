@@ -22,12 +22,12 @@
 .Navbar__li a{
 	text-decoration: none;
 	color: var(--blackColor);
-	transition: all 0.2s ease-in-out;
+	transition: all 0.12s ease-in-out;
 	display: flex;
 }
 
 .Navbar__li a:hover{
-	transform: scale(1.05);
+	transform: scale(1.03);
 	color: var(--principalColor);
 }
 

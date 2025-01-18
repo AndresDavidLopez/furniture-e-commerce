@@ -1,0 +1,186 @@
+.Recommended{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 3.4375rem 5.625rem 0 12.5rem;
+}
+
+.Recommended__shortDescription{
+
+}
+
+.Recommended__productData{
+
+}
+
+.Recommended__secondTitle{
+
+}
+
+.Recommended__brand{
+
+}
+
+.Recommended__color{
+
+}
+
+.Recommended__productDimensions{
+
+}
+
+.Recommended__price{
+
+}
+
+.Recommended__extraData{
+
+}
+
+.Recommended__ratings{
+
+}
+
+.Recommended__bought{
+
+}
+
+.Recommended__shipping{
+
+}
+
+.Recommended__principalProduct{
+	position: relative;
+	width: min-content;
+	height: min-content;
+}
+
+.Recommended__principalImg{
+	width: 37.5rem;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 10;
+	transform: translate(0, -50%);
+}
+
+.Recommended__fillCircle{
+	width: 40.625rem;
+	height: 40.625rem;
+	background: linear-gradient(135deg, #F9A604 0%, rgba(249, 166, 4, 0.25) 100%);
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 9;
+	transform: translate(-50%, -50%);
+}
+
+.Recommended__borderCircle{
+	width: 46.875rem;
+	height: 46.875rem;
+	position: relative;
+}
+
+.Recommended__borderCircle svg{
+	width: 46.875rem;
+	height: 46.875rem;
+	stroke-width: 1rem;
+}
+
+.Recommended__colorPick{
+	width: 2.875rem;
+	height: 2.875rem;
+	border-radius: 50%;
+	background-color: var(--whiteColor);
+	border: .125rem solid transparent;
+	cursor: pointer;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+}
+
+.Recommended__colorPick div{
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+}
+
+.Recommended__colorPickId1{
+	bottom: 12.625rem;
+	right: 1.125rem;
+}
+
+.Recommended__colorPickId2{
+	bottom: 8.375rem;
+	right: 3.5625rem;
+}
+
+.Recommended__colorPickId3{
+	bottom: 4.75rem;
+	right: 6.8125rem;
+}
+
+.Recommended__colorPickId4{
+	bottom: 1.875rem;
+	right: 11.0625rem;
+}
+
+.Recommended__colorPickId5{
+	bottom: 0;
+	right: 15.9375rem;
+}
+
+.Recommended__colorPick_isActive{
+	border: .125rem solid var(--principalColor);
+}
+
+.Recommended__verticalCarousel{
+	display: flex;
+	flex-direction: column;
+	gap: 1.875rem;
+	align-items: center;
+	user-select: none;
+	margin-left: 50px;
+}
+
+.Recommended__carouselItem{
+	width: 9.375rem;
+	height: 10rem;
+	border: .1875rem solid transparent;
+	border-radius: .9375rem;
+	background-color: var(--whiteColor);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	box-shadow: 0px 2px 20px -3px rgba(7, 107, 178, 0.15);
+}
+
+.Recommended__carouselItem_isActive{
+	border: .1875rem solid var(--principalColor);
+}
+
+.Recommended__carouselItem img{
+	width: 6.25rem;
+	height: auto;
+}
+
+.Recommended_downButton, .Recommended_upButton{
+	height: 2.125rem;
+	width: 2.125rem;
+	border-radius: 50%;
+	border: none;
+	background-color: var(--principalColor);
+	stroke: var(--whiteColor);
+	cursor: pointer;
+	margin: -0.625rem 0 0 0;
+}
+
+.Recommended_upButton{
+	transform: rotate(180deg);
+	margin: 0 0 -0.625rem 0;
+}
